@@ -45,3 +45,5 @@ We have been given starter code for this assignment. My job is to fix, build, an
 
 ## Deployment
 https://dvdhyn.github.io/mod3-challenge/
+
+![mod3-challenge-screenshot](https://github.com/dvdhyn/mod3-challenge/assets/145178667/5eabf66d-3f8e-47b9-9263-78f200b49a16)
