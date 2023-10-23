@@ -34,7 +34,11 @@ function generatePassword() {
   if (charType) {
     charBank += type;
   }
-
+  
+  // added input validation so at least one condition must be answered by user
+  if (!charLowCase && !charUpCase && !charNumb && !charType) {
+    alert("Please confirm at least one prompt for your password.");
+  } else {
   // used to confirm correct items are being added to varialbe charBank
   console.log(charBank);
 
@@ -46,6 +50,7 @@ function generatePassword() {
   // opted for an alert and a return for userPass result
   alert("Your generated password is: " + userPass);
   return(userPass);
+  }
 }
 
 // Write password to the #password input
