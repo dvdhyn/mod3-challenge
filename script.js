@@ -2,16 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // defines possible values for lowercase, uppercase, numbers, and special characters
-var lowCase=["a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"];
-var upCase=["A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"];
-var numb=["0,1,2,3,4,5,6,7,8,9"];
-var type=["-,_,=,+,~,`,|,{,},[,],;,:,',<,>,.,/,?,!,@,#,$,%,^,&,*,(,)"];
+var lowCase=["abcdefghijklmnopqrstuvwxyz"];
+var upCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var numb=["0123456789"];
+var type=["-_=+~`|{}[];:'<>./?!@#$%^&*()"];
+var userPass="";
+var charBank="";
 
 // defined missing function from function writePassword()
 // needs user input for character length, case, and type
 function generatePassword() {
-  var userPass="";
-  var charBank="";
   var charLength=prompt("How many characters will your password be? (must be 8-128 characters)");
   if (charLength < 8 || charLength > 128) {
     alert("Password must be more than 8 characters and less than 128 characters.");
@@ -33,7 +33,15 @@ function generatePassword() {
   if (charType) {
     charBank += type;
   }
+
   console.log(charBank);
+
+  for (var i = 0; i < charLength; i++) {
+    userPass=userPass += charBank.charAt(Math.floor(Math.random() * charBank.length));
+  }
+  console.log(userPass);
+  alert("Your generated password is: " + userPass);
+  return(userPass);
 }
 
 // Write password to the #password input
@@ -42,7 +50,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
