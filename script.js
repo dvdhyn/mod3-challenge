@@ -7,12 +7,12 @@ var lowCase=["abcdefghijklmnopqrstuvwxyz"];
 var upCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 var numb=["0123456789"];
 var type=["-_=+~`|{}[];:'<>./?!@#$%^&*()"];
-var userPass="";
 var charBank="";
 
 // defined missing generatePassword() function from function writePassword()
 // created variables for each user input confirming character length, case, and types
 function generatePassword() {
+  var userPass="";
   var charLength=prompt("How many characters will your password be? (must be 8-128 characters)");
   if (charLength < 8 || charLength > 128) {
     alert("Password must be more than 8 characters and less than 128 characters.");
