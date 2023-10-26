@@ -38,10 +38,12 @@ THEN the password is either displayed in an alert or written to the page
 
 ## My Goal
 
-The application's starting behavior showed there was no functionality behind the **Generate Password**.
+The application's starting behavior showed there was no functionality behind the **Generate Password** button.
 My goal for this assignment is to fix this program so it will generate a specific password based on multiple prompts confirmed by the user.
 We have been given starter code for this assignment. My job is to fix, build, and deploy the application.
     
 
 ## Deployment
 https://dvdhyn.github.io/mod3-challenge/
+
+![mod3-challenge-screenshot](https://github.com/dvdhyn/mod3-challenge/assets/145178667/5eabf66d-3f8e-47b9-9263-78f200b49a16)
