@@ -7,6 +7,7 @@ var lowCase=["abcdefghijklmnopqrstuvwxyz"];
 var upCase=["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 var numb=["0123456789"];
 var type=["-_=+~`|{}[];:'<>./?!@#$%^&*()"];
+
 var charBank="";
 
 // defined missing generatePassword() function from function writePassword()
